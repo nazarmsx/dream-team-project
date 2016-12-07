@@ -1,0 +1,35 @@
+body{
+    padding-top:70px;
+}
+
+.dummy
+{
+    opacity: 0;
+}
+
+.red
+{
+    color:red;
+}
+
+.login-box
+{
+    margin-top:50px;
+}
+
+.thumbnail img
+{
+    max-height: 150px !important;
+}
+
+.progress {
+    height: 25px;
+}
+.progress .progress-bar {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+th{
+    cursor: pointer;
+}

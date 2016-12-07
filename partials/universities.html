@@ -1,0 +1,21 @@
+<h1>
+    Університети
+</h1>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="university in universities">
+        <div class="thumbnail">
+            <img class="" ng-src="{[{university.img}]}" alt="university_img">
+            <div class="caption">
+                <h3>{[{university.name}]}</h3>
+
+                <p><b>Адреса:</b> {[{university.address}]} </p>
+                <p>
+                    <a  href="" class="btn btn-primary " style="" role="button">Переглянути дисципліни</a>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>

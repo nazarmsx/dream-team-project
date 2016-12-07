@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>NaUKMA: Course enrollment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <link rel="stylesheet" href="./include/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="./include/style.css" media="screen">
+    <link rel="stylesheet" href="./include/font-awesome.min.css">
+
+
+
+
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="./" class="navbar-brand">NaUKMA</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+
+                <li>
+                    <a ui-sref="courses">Навчальні диспліни</a>
+                </li>
+                <li>
+                    <a ui-sref="universities">Університети</a>
+                </li>
+                <li>
+                    <a ui-sref="profile">Профіль</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                 <li><a href="" target="_blank" data-ng-click="logout()"  ng-show="user"  >Вийти із системи</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div ui-view></div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+<script src="./include/jquery.js"></script>
+<script src="./include/bootstrap.min.js"></script>
+<script src="./include/angular.min.js"></script>
+
+<script src="./javascripts/app.js"></script>
+<script src="./include/angular-ui-router.min.js"></script>
+<script src="./javascripts/coursesCtrl.js"></script>
+<script src="./javascripts/loginCtrl.js"></script>
+<script src="./javascripts/universitiesCtrl.js"></script>
+<script src="./javascripts/profileCtrl.js"></script>
+
+</html>

@@ -1,0 +1,21 @@
+<h1>
+    Навчальні дисципліни
+</h1>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="course in courses">
+        <div class="thumbnail">
+            <img ng-src="http://lorempixel.com/400/200/technics?{[{course.name.length}]}" alt="random">
+            <div class="caption">
+                <h3>{[{course.name}]}</h3>
+                <p>{[{course.description}]}</p>
+                <p><b>Кількість кредитів:</b> {[{course.credits}]} </p>
+                <p>
+                    <a  href="" class="btn btn-primary " style="" role="button">Записатися</a>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
